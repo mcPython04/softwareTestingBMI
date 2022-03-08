@@ -1,17 +1,16 @@
 def main():
-    print("Please enter the required information")
     height_feet = int(input("Please enter your height (ft.): "))
     height_inch = int(input("Please enter your height (in.): "))
     weight = int(input("Please enter your weight (lbs.): "))
 
     # Calculate BMI based on values inputted
-    bmi = round(calculate_bmi(height_feet, height_inch, weight), 2)
-    print("BMI: ", bmi)
+    bmi = round(calculate_bmi(height_feet, height_inch, weight), 1)
+    #print("BMI: ", bmi)
 
     # Outputs message based on BMI value
     if bmi < 18.5:
         print("Underweight")
-
+        
     elif bmi >= 18.5 or bmi < 25:
         print("Normal Weight")
 
